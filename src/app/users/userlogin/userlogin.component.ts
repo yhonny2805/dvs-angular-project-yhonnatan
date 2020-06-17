@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./userlogin.component.css']
 })
 export class UserloginComponent implements OnInit {
+  headline = 'Welcome to Document Verification System!';
 
   constructor() { }
 
