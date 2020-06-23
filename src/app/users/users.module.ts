@@ -22,6 +22,7 @@ import { UserforgotpasswordComponent } from './userforgotpassword/userforgotpass
   exports: [
     UserloginComponent,
     UsersignupComponent,
+    UserslistComponent
   ]
 
 })

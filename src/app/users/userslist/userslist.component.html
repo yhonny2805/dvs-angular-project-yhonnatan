@@ -1,1 +1,47 @@
-<p>userslist works!</p>
+<div [ngStyle]="navigationStyle">
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="">
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" href="">New Members Report</a>
+            </li>
+            <li class="">
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" href=""> All Members Report</a>
+            </li>
+            <li class="">
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" href="">Home</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="flex-container">
+    <div class="float-child">
+        <h2>New members</h2>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+            </tr>
+            <Tr *ngFor='let personName of personNames'>
+                {{personName}}
+            </Tr>
+
+        </table>
+    </div>
+    <br>
+
+    <div class="float-child">
+        <h2>Current Members</h2>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+
+            <tr *ngFor='let user of currentMembers'>
+                <td *ngIf='user.age > 30'>{{ user.name }}</td>
+                <td *ngIf='user.age > 30'>{{ user.age }}</td>
+
+            </tr>
+        </table>
+    </div>
+</div>
