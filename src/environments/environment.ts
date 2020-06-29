@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  usersdataURL: "http://jsonplaceholder.typicode.com/"
+  usersdataURL: "https://my-json-server.typicode.com/"
 };
 
 /*
