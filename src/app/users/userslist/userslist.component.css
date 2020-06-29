@@ -12,6 +12,7 @@
     border: 1px solid black;
     text-align: left;
     padding: 8px;
+    width: 140px;
   }
   
   tr:nth-child(even) {
