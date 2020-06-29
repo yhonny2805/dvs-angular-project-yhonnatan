@@ -1,4 +1,4 @@
-<div [ngStyle]="navigationStyle">
+<!--<div [ngStyle]="navigationStyle">
     <nav class="navbar navbar-expand-sm">
         <ul class="navbar-nav">
             <li class="">
@@ -44,4 +44,30 @@
             </tr>
         </table>
     </div>
-</div>
+</div>-->
+
+<ng-container *ngIf="users">
+    <h1>List of current active users</h1>
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+
+        </tr>
+        <tbody>
+
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+
+</ng-container>
