@@ -9,17 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { RouterModule } from '@angular/router';
+import { SitenotfoundComponent } from './sitenotfound/sitenotfound.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    SitenotfoundComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
+    RouterModule.forRoot([]),
     UsersModule,
     BrowserAnimationsModule,
     HttpClientModule,

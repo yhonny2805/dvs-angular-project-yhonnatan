@@ -2,17 +2,19 @@
 <div [ngStyle]="navigationStyle">
     <nav class="navbar navbar-expand-sm">
         <ul class="navbar-nav">
-            <li class="">
+            <li>
                 <a span [ngStyle]="{color:colorStyle}" class="nav-link" href=""></a>
             </li>
-            <li class="">
-                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="/userlist">Users Report</a>
-            </li>
-            <li class="">
-                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="/usersignup">New member? </a>
+            <li>
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="userlogin/userslist">Users
+                    Report</a>
             </li>
             <li>
-                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="/home">Home</a>
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="userlogin/usersignup">New member?
+                </a>
+            </li>
+            <li>
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="userlogin">Home</a>
             </li>
         </ul>
     </nav>

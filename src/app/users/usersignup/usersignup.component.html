@@ -4,12 +4,11 @@
 <img [src]="srcURL" />
 <form class="text-center border border-light p-5">
 
-    <h2>Hi {{ newMember }}!</h2>
+    <h2>Hi {{ newMember}}!</h2>
     <div class="form-row mb-4 formsignup">
         <div class="col">
             <!-- First name -->
-            <input [(ngModel)]='newMember' [ngModelOptions]="{standalone: true}" type="text" class="form-control"
-                placeholder="First name">
+            <input type="text" class="form-control" placeholder="First name">
             <br>
         </div>
         <div class="col">

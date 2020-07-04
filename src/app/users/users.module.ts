@@ -3,27 +3,31 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 
-import { UserloginComponent } from './userlogin/userlogin.component';
-import { UsersignupComponent } from './usersignup/usersignup.component';
-import { UserslistComponent } from './userslist/userslist.component';
 import { UserforgotpasswordComponent } from './userforgotpassword/userforgotpassword.component';
+import { UsersignupRoutingModule } from './usersignup/usersignup-routing.module';
+import { UserloginRoutingModule } from './userlogin/userlogin-routing.module';
+import { UserslistRoutingModule } from './userslist/userslist-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from '../app-routing/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
-    UserloginComponent,
-    UserslistComponent,
-    UsersignupComponent,
     UserforgotpasswordComponent],
   imports: [
+    BrowserModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    UserloginRoutingModule,
+    UserslistRoutingModule,
+    UsersignupRoutingModule,
+    HttpClientModule,
+
+
   ],
-  exports: [
-    UserloginComponent,
-    UsersignupComponent,
-    UserslistComponent
-  ]
+  exports: []
 
 })
 export class UsersModule { }
