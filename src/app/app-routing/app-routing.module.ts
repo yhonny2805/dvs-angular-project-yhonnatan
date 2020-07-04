@@ -7,7 +7,6 @@ const routes: Routes = [
   /* {
      path: "userslist", component: UserslistComponent
    },
- 
    {
      path: "userlogin", component: UserloginComponent
    },
