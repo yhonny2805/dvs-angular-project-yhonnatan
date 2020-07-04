@@ -8,9 +8,7 @@ import { UsersignupRoutingModule } from './usersignup/usersignup-routing.module'
 import { UserloginRoutingModule } from './userlogin/userlogin-routing.module';
 import { UserslistRoutingModule } from './userslist/userslist-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 
 
 @NgModule({
