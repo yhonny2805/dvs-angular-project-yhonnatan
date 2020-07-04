@@ -23,7 +23,6 @@ import { HttpClientModule } from '@angular/common/http';
     UsersignupRoutingModule,
     HttpClientModule,
 
-
   ],
   exports: []
 
