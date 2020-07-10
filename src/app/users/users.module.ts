@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    UserforgotpasswordComponent],
+    UserforgotpasswordComponent,],
   imports: [
     BrowserModule,
     CommonModule,
@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     UserslistRoutingModule,
     UsersignupRoutingModule,
     HttpClientModule,
+
 
 
   ],

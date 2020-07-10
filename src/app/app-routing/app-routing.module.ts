@@ -19,7 +19,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: UserloginComponent
+        loadChildren: () => import(`../users/userlogin/userlogin.module`).then(m => m.UserloginModule)
       },
       {
         path: "userslist",
@@ -31,7 +31,7 @@ const routes: Routes = [
       },
       {
         path: "**",
-        component: SitenotfoundComponent
+        loadChildren: () => import(`../sitenotfound/sitenotfound.module`).then(m => m.SitenotfoundModule)
       }
     ]
   },
