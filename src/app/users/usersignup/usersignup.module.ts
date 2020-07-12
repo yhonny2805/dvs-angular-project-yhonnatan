@@ -6,9 +6,7 @@ import { UsersignupComponent } from './usersignup.component';
 
 
 @NgModule({
-  declarations: [
-    UsersignupComponent,
-  ],
+  declarations: [UsersignupComponent],
   imports: [
     CommonModule,
     UsersignupRoutingModule,
