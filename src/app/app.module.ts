@@ -11,6 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { RouterModule } from '@angular/router';
 import { SitenotfoundComponent } from './sitenotfound/sitenotfound.component';
+import { NewmembersComponent } from './newmembers/newmembers.component';
+import { PasswordPatternDirective } from './directives/password-pattern.directive';
+import { MatchPasswordDirective } from './directives/match-password.directive';
+
+
 
 
 
@@ -18,14 +23,20 @@ import { SitenotfoundComponent } from './sitenotfound/sitenotfound.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    SitenotfoundComponent
+    SitenotfoundComponent,
+    NewmembersComponent,
+    PasswordPatternDirective,
+    MatchPasswordDirective
+
   ],
   imports: [
     RouterModule.forRoot([]),
+    BrowserModule,
     UsersModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
 
   ],
   providers: [],

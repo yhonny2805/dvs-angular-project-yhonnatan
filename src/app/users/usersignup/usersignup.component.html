@@ -1,5 +1,3 @@
-<!-- Default form register -->
-
 <h1>{{Headline}}</h1>
 <img [src]="srcURL" />
 <form class="text-center border border-light p-5">
@@ -7,22 +5,22 @@
     <h2>Hi {{ newMember}}!</h2>
     <div class="form-row mb-4 formsignup">
         <div class="col">
-            <!-- First name -->
+
             <input type="text" class="form-control" placeholder="First name">
             <br>
         </div>
         <div class="col">
-            <!-- Last name -->
+
             <input type="text" class="form-control" placeholder="Last name">
         </div>
     </div>
 
-    <!-- E-mail -->
+
     <div class="form-row mb-4 formsignup">
         <div class="col">
             <input type="email" class="form-control mb-4" placeholder="E-mail">
         </div>
-        <!-- Password -->
+
         <div class="col">
             <input type="password" class="form-control" placeholder="Password"
                 aria-describedby="defaultRegisterFormPasswordHelpBlock">
@@ -31,7 +29,7 @@
             </small>
         </div>
     </div>
-    <!-- Sign up button -->
+
     <button class="my-4 button1 button1:hover" (click)="mySubmit()">Sign in</button>
     <br>
     <br>
@@ -39,10 +37,6 @@
     <br>
     <br>
     <br>
-    <hr>
-    <!-- Terms of service -->
+
     <p><span [innerHTML]='termsOfService'></span>
         <a href="" target="_blank">Terms of Service</a></p>
-
-</form>
-<!-- Default form register -->
