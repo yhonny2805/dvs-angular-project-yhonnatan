@@ -1,0 +1,116 @@
+<div class="container col-md-5">
+    <div [hidden]="submitted">
+        <h1>Sign up Form</h1>
+        <form class="form" (ngSubmit)="onSubmit(userForm)" #userForm="ngForm" novalidate="">
+
+            <div class="form-group">
+                <label for="name">First Name *</label>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="newuser.name" name="name"
+                    #name="ngModel">
+                <div [hidden]="name.valid || name.pristine" class="alert text-danger">
+                    <div class="text-danger" *ngIf="name.errors?.required">
+                        First Name is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" required [(ngModel)]="newuser.lastName"
+                    name="lastName" #lastName="ngModel">
+                <div [hidden]="lastName.valid || lastName.pristine" class="alert text-danger">
+                    <div class="text-danger" *ngIf="lastName.errors?.required">
+                        Last Name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address *</label>
+                <input type="text" class="form-control" id="email" required [(ngModel)]="newuser.email" name="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel">
+                <div [hidden]="email.valid || email.pristine" class="alert text-danger">
+                    <div class="text-danger" *ngIf="(email.touched || userForm.submitted) && email.errors?.required">
+                        Email is required
+                    </div>
+                    <div class="text-danger" *ngIf="email.touched && email.errors?.pattern">
+                        Enter a valid email address
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role *</label>
+                <select class="form-control" id="role" required [(ngModel)]="newuser.role" name="role" #role="ngModel">
+                    <option *ngFor="let role of roles" [ngValue]="role">
+                        {{role.role}}
+                    </option>
+                </select>
+                <div [hidden]="role.valid || role.pristine" class="alert alert-danger">
+                    This field is required
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" [(ngModel)]="newuser.password" name="password"
+                    #password="ngModel" appPasswordPattern required>
+                <span class="text-danger" *ngIf="(password.touched || userForm.submitted) && password.errors?.required">
+                    Password is required
+                </span>
+                <span class="text-danger" *ngIf="password.touched && password.errors?.invalidPassword">
+                    Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase
+                    letter and 1 number
+                </span>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" [(ngModel)]="newuser.confirmPassword" name="confirmPassword"
+                    #confirmPassword="ngModel" required>
+                <span class="text-danger"
+                    *ngIf="(confirmPassword.touched || userForm.submitted) && confirmPassword.errors?.required">
+                    Confirm Password is required
+                </span>
+                <span class="text-danger" *ngIf="confirmPassword.touched && confirmPassword.errors?.passwordMismatch">
+                    Passwords doesnot match
+                </span>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" required [(ngModel)]="newuser.tc" name="tc" class="custom-control-input"
+                        id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">
+                        I agree with the Terms & Conditions</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Register</button>
+            <button type="button" class="btn btn-success" (click)="userForm.reset()">Reset</button>
+
+
+
+        </form>
+    </div>
+
+    <div [hidden]="!submitted">
+        <h2>This information has been sent:</h2>
+        <div class="row">
+            <div class="col-xs-3">Fist Name: {{ newuser.name }} </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Last Name: {{ newuser.lastName }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Email address: {{ newuser.email }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Role: {{ newuser.role }} </div>
+        </div>
+        <br>
+        <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+    </div>
+</div>
