@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    width: 150px;
+  }
+
+  .d1 {
+    width: 400px !important;
+  }
+
+span:hover {
+    cursor: pointer;
+ }
+
+ button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+/*Boton download*/
+  .btn1{
+    background:green;
+    color: white;
+}
+/* Boton Remove*/
+  .btn2{
+      background: red;
+      color: white;
+  }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UsersModule } from './users/users.module';
@@ -14,6 +14,9 @@ import { SitenotfoundComponent } from './sitenotfound/sitenotfound.component';
 import { NewmembersComponent } from './newmembers/newmembers.component';
 import { PasswordPatternDirective } from './directives/password-pattern.directive';
 import { MatchPasswordDirective } from './directives/match-password.directive';
+import { FileUploaderComponent } from './file-uploader/file-uploader.component';
+import { FileListComponent } from './file-list/file-list.component';
+
 
 
 
@@ -26,7 +29,9 @@ import { MatchPasswordDirective } from './directives/match-password.directive';
     SitenotfoundComponent,
     NewmembersComponent,
     PasswordPatternDirective,
-    MatchPasswordDirective
+    MatchPasswordDirective,
+    FileUploaderComponent,
+    FileListComponent
 
   ],
   imports: [
@@ -36,7 +41,8 @@ import { MatchPasswordDirective } from './directives/match-password.directive';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
