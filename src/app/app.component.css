@@ -1,4 +1,23 @@
-.active{
+hr{
+    height: 1px;
+background-color: rgb(3, 40, 121);
+border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.active{
     color: white !important;
     font-weight: bolder;
 }
@@ -15,4 +34,4 @@ img{
 
 li{
     cursor: pointer;
-}
+}*/

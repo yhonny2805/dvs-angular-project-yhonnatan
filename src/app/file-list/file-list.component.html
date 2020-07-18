@@ -1,0 +1,15 @@
+<h1>** File List **</h1>
+<table>
+    <tr>
+        <th>File Name</th>
+        <th></th>
+    </tr>
+
+    <tbody>
+        <tr *ngFor="let fileName of fileList$ | async">
+            <td class="d1"> {{fileName}}</td>
+            <td> <button class="btn2" (click)="remove(fileName)">remove</button>
+        </tr>
+
+    </tbody>
+</table>
