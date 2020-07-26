@@ -11,14 +11,14 @@ export class FileService {
   constructor() { }
 
   public upload(fileName: string, fileContent: string): void {
-    this.fileList.push(fileName);
-    this.fileList$.next(this.fileList);
+    this.fileList.push(fileName); /* push = agrega nuevo elemento*/
+    this.fileList$.next(this.fileList); /* next = informa al subject que hay cambios en el arreglo fileList*/
   }
 
 
   public remove(fileName): void {
-    this.fileList.splice(this.fileList.findIndex(name => name === fileName), 1);
-    this.fileList$.next(this.fileList);
+    this.fileList.splice(this.fileList.findIndex(name => name === fileName), 1); /* splice = eleminia la posición seleccionada */
+    this.fileList$.next(this.fileList);  /* next = informa al subject que hay cambios en el arreglo fileList*/
   }
 
   public list(): Observable<string[]> {

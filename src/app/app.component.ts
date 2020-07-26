@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dvs-angular-project-yhonnatan';
+  title = 'Projecto de Angular-Yhonnatan';
 
+  @Input() elementoid: string;
+
+  ngOnInit() {
+    if ((!this.elementoid) || this.elementoid.length != 0) {
+      console.log('El codigo del elemento es' + this.elementoid);
+    }
+  }
 }
