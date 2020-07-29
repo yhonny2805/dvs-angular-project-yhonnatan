@@ -1,27 +1,4 @@
-
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { LoginpageComponent } from '../loginpage/loginpage.component';
-import { UserloginComponent } from '../users/userlogin/userlogin.component';
-const routes: Routes = [
-  { path: 'userlogin', component: UserloginComponent },
-  { path: 'loginpage', component: LoginpageComponent },
-  { path: '', component: LoginpageComponent }
-];
-@NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ],
-  declarations: []
-})
-export class AppRoutingModule { }
-
-
-
-/*import { NgModule } from '@angular/core';
 import { Routes, RouterModule, Router } from '@angular/router';
 import { UserloginComponent } from '../users/userlogin/userlogin.component';
 import { SitenotfoundComponent } from '../sitenotfound/sitenotfound.component';
@@ -36,7 +13,7 @@ const routes: Routes = [
    {
      path: "usersignup", component: UsersignupComponent
    }
-
+   */
   {
     path: "userlogin",
     children: [
@@ -64,4 +41,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }*/
+export class AppRoutingModule { }
