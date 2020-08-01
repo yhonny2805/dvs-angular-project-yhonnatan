@@ -1,12 +1,21 @@
 
-button {
-  margin: 10px;
-}
-
 div{
     margin-top:5px;
     margin-bottom:5px;
 }
 .ng-invalid.ng-touched:not(form) {
   border: 2px solid red;
+}
+
+button {
+
+  background: black !important;
+  color: white;
+  width: 80px;
+  border-radius: 5px;
+  margin: 15px;
+}
+.button1:hover {
+  background-color: #1619ec !important; /* Green */
+  color: white !important;
 }

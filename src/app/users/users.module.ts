@@ -15,8 +15,7 @@ import { UserslistComponent } from './userslist/userslist.component';
 @NgModule({
   declarations: [
     UserforgotpasswordComponent,
-    UserslistComponent
-
+    UserslistComponent,
 
   ],
   imports: [

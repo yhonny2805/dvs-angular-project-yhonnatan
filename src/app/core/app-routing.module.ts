@@ -4,11 +4,13 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { UserInterfaceComponent } from '../user-interface/user-interface.component';
 import { LoginComponent } from '../login/login.component';
 import { UserslistComponent } from '../users/userslist/userslist.component';
+import { NewmembersComponent } from '../newmembers/newmembers.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'user-interface', component: UserInterfaceComponent },
   { path: 'userlist', component: UserslistComponent },
+  { path: 'newmembers', component: NewmembersComponent },
   { path: '', component: LoginComponent }
 ];
 @NgModule({
