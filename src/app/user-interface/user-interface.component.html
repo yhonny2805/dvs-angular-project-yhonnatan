@@ -1,1 +1,22 @@
-<p>user-interface works!</p>
+<div [ngStyle]="navigationStyle">
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li>
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="userlogin/userslist">Users
+                    Report</a>
+            </li>
+            <li>
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="userlogin/usersignup">New member?
+                </a>
+            </li>
+            <li>
+                <a span [ngStyle]="{color:colorStyle}" class="nav-link" routerLink="userlogin">Home</a>
+            </li>
+            <li>
+                <button (click)="logout()" color="primary">logout</button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<br>
+<router-outlet></router-outlet>
