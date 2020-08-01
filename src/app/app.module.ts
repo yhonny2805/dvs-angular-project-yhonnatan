@@ -22,6 +22,7 @@ import { FileListComponent } from './file-list/file-list.component';
 
 import { LoginComponent } from './login/login.component';
 import { UserInterfaceComponent } from './user-interface/user-interface.component';
+import { HelpComponent } from './help/help.component';
 
 
 
@@ -41,6 +42,7 @@ import { UserInterfaceComponent } from './user-interface/user-interface.componen
     FileListComponent,
     LoginComponent,
     UserInterfaceComponent,
+    HelpComponent,
 
 
 

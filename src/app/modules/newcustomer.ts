@@ -6,7 +6,7 @@ export class Newcustomer {
         public name: string,
         public lastName: string,
         public email: string,
-        public role: string,
+        public role: any,
         public password: string,
         public confirmPassword: string,
         public tc: boolean

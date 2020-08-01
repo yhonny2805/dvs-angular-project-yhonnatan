@@ -1,15 +1,13 @@
 <mat-toolbar class="nav">
     <mat-toolbar-row>
-        <h1>Welcome to DIVS!</h1>
+        <h1>Welcome to DVS!</h1>
         <span class="menu-spacer"></span>
-        <div>
-            <a mat-button class="button1" [routerLink]="'/'"> Accounts </a>
-            <a mat-button class="button1" [routerLink]="'/userlist'"> Users Report </a>
-        </div>
         <div class="div-upl">
             <app-file-uploader></app-file-uploader>
         </div>
         <div>
+            <a mat-button class="button1" [routerLink]="'/userlist'"> Users Report </a>
+            <a mat-button class="button1" [routerLink]="'/help'"> Help? </a>
             <a mat-button class="button1 div-logout" (click)="logout()">Logout </a>
         </div>
     </mat-toolbar-row>

@@ -1,0 +1,64 @@
+.nav{
+    background: black !important;
+    color: white;
+}
+button {
+
+    background: black;
+    color: white;
+    width: 80px;
+    border-radius: 5px;
+  }
+  .button1:hover {
+    background-color: #1619ec !important; /* Green */
+    color: white !important;
+  }
+
+  .div-help {
+        position: absolute;
+        right: 50px;
+  }
+
+  
+  .bgimg {
+    background-image: url('../../assets/woodland-road-falling-leaf-natural-38537.jpeg');
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;  
+    font-size: 40px;
+    font-weight: bold;
+}

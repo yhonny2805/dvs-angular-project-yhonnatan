@@ -1,7 +1,8 @@
 <div class="container col-md-5">
     <div [hidden]="submitted">
         <h1>Sign up Form</h1>
-        <form class="form" (ngSubmit)="onSubmit(userForm)" #userForm="ngForm" novalidate="">
+        <form class="form" (ngSubmit)="onSubmit(userForm)" #userForm="ngForm" novalidate=""
+            [appMatchPassword]="['password', 'confirmPassword']">
 
             <div class="form-group">
                 <label for="name">First Name *</label>
@@ -72,7 +73,7 @@
                     Confirm Password is required
                 </span>
                 <span class="text-danger" *ngIf="confirmPassword.touched && confirmPassword.errors?.passwordMismatch">
-                    Passwords doesnot match
+                    Passwords does not match
                 </span>
             </div>
 
