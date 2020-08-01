@@ -3,6 +3,9 @@ import { NgModule, Injector } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { CustomMaterialModule } from './material/material.module';
+
+
 import { AppComponent } from './app.component';
 import { UsersModule } from './users/users.module';
 
@@ -16,7 +19,7 @@ import { PasswordPatternDirective } from './directives/password-pattern.directiv
 import { MatchPasswordDirective } from './directives/match-password.directive';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component';
 import { FileListComponent } from './file-list/file-list.component';
-import { CustomMaterialModule } from './material/material.module';
+
 
 
 
@@ -39,7 +42,7 @@ import { UserInterfaceComponent } from './user-interface/user-interface.componen
     FileUploaderComponent,
     FileListComponent,
     LoginComponent,
-    UserInterfaceComponent
+    UserInterfaceComponent,
 
 
   ],
@@ -51,7 +54,7 @@ import { UserInterfaceComponent } from './user-interface/user-interface.componen
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    CustomMaterialModule
+    CustomMaterialModule,
     /*LoginModule,
     UserInterfaceModule*/
 
