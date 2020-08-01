@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { UsersModule } from './users/users.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './core/app-routing.module';
 import { SitenotfoundComponent } from './sitenotfound/sitenotfound.component';
@@ -33,7 +32,6 @@ import { HelpComponent } from './help/help.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     SitenotfoundComponent,
     NewmembersComponent,
     PasswordPatternDirective,
