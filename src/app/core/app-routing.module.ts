@@ -1,25 +1,50 @@
 
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 import { UserInterfaceComponent } from '../user-interface/user-interface.component';
 import { LoginComponent } from '../login/login.component';
-
+import { UserslistComponent } from '../users/userslist/userslist.component';
+import { NewmembersComponent } from '../newmembers/newmembers.component';
+import { HelpComponent } from '../help/help.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'user-interface', component: UserInterfaceComponent },
+  { path: 'userlist', component: UserslistComponent },
+  { path: 'newmembers', component: NewmembersComponent },
+  { path: 'help', component: HelpComponent },
   { path: '', component: LoginComponent }
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ],
-  declarations: []
+    RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
+
+/*const routes: Routes = [
+
+  {
+    path: '',
+    loadChildren: () => import(`../login/login.module`).then(m => m.LoginModule)
+  },
+  {
+    path: "user-interface",
+    loadChildren: () => import(`../user-interface/user-interface.module`).then(m => m.UserInterfaceModule)
+  },
+]
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }*/
+
+
+
+
+
+
 
 
 

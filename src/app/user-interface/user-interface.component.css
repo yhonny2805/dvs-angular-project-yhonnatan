@@ -1,0 +1,19 @@
+.nav{
+    background: black !important;
+    color: white;
+}
+
+
+
+.button1:hover {
+    background-color: #1619ec !important; /* Green */
+    color: white !important;
+  }
+
+  .div-logout {
+    margin-left: 380px;
+  }
+
+  .div-upl {
+      margin-left: 30px;
+  }

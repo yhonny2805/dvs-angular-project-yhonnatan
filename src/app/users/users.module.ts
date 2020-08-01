@@ -5,24 +5,27 @@ import { FormsModule } from '@angular/forms';
 
 import { UserforgotpasswordComponent } from './userforgotpassword/userforgotpassword.component';
 import { UsersignupRoutingModule } from './usersignup/usersignup-routing.module';
-import { UserloginRoutingModule } from './userlogin/userlogin-routing.module';
 import { UserslistRoutingModule } from './userslist/userslist-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { UserslistComponent } from './userslist/userslist.component';
+
 
 
 @NgModule({
   declarations: [
     UserforgotpasswordComponent,
+    UserslistComponent,
 
   ],
   imports: [
     BrowserModule,
     CommonModule,
     FormsModule,
-    UserloginRoutingModule,
-    UserslistRoutingModule,
-    UsersignupRoutingModule,
+    /*LoginRoutingModule,
+    UserInterfaceRoutingModule,*/
+    /*UserslistRoutingModule,
+    UsersignupRoutingModule,*/
     HttpClientModule,
 
   ],

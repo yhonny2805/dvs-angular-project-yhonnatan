@@ -1,10 +1,8 @@
-.table {
-    margin-top: 25px;
-    margin-left: 50px;
+.tbl-1 {
+    margin: 50px 0px 0px 30px;
     font-family: arial, sans-serif;
-    width: 25%;
-    border: 1px solid black;
-
+    width: 50%;
+    border: 1px solid black;  
 }
 
   
@@ -15,19 +13,38 @@
     width: 140px;
   }
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #dddddd;
   }
 
   .flex-container {
     display: flex;
-}
+  }
 
 
 .float-child {
     float: left;
     width: 500px;
-    margin-right: 20px;
-
-  
+    margin-right: 20px; 
 }  
+
+h1 {
+  margin-left: 30px;
+}
+
+button {
+
+  background: black;
+  color: white;
+  width: 80px;
+  border-radius: 5px;
+}
+.button1:hover {
+  background-color: #1619ec !important; /* Green */
+  color: white !important;
+}
+
+.divbk {
+  margin-top: 20px;
+  margin-left: 30px;
+}

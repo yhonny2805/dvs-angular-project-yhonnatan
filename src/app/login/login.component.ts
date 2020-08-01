@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
@@ -20,5 +21,9 @@ export class LoginComponent implements OnInit {
     } else {
       alert("Invalid credentials");
     }
+  }
+
+  signUp(): void {
+    this.router.navigate(["newmembers"]);
   }
 }
