@@ -8,3 +8,14 @@ button {
 .upl {
     margin-top: 30px;
 }
+
+.upl2 {
+    font-size: 14px !important;
+    margin-bottom: 30px;
+}
+
+.button1:hover {
+    background-color: #1619ec !important; /* Green */
+    color: white !important;
+  }
+

@@ -3,13 +3,16 @@
         <h1>Welcome to DIVS!</h1>
         <span class="menu-spacer"></span>
         <div>
-            <a mat-button class="button1" [routerLink]="'/accounts'"> Accounts </a>
-            <a mat-button class="button1" [routerLink]="'/create-account'"> Users Report </a>
-            <a mat-button class="button1" (click)="logout()">Logout </a>
-
-
+            <a mat-button class="button1" [routerLink]="'/'"> Accounts </a>
+            <a mat-button class="button1" [routerLink]="'/userlist'"> Users Report </a>
+        </div>
+        <div class="div-upl">
+            <app-file-uploader></app-file-uploader>
+        </div>
+        <div>
+            <a mat-button class="button1 div-logout" (click)="logout()">Logout </a>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>
-
+<app-file-list></app-file-list>
 <router-outlet></router-outlet>

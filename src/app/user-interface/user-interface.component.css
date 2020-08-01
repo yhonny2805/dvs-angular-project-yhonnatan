@@ -9,3 +9,11 @@
     background-color: #1619ec !important; /* Green */
     color: white !important;
   }
+
+  .div-logout {
+    margin-left: 380px;
+  }
+
+  .div-upl {
+      margin-left: 30px;
+  }
