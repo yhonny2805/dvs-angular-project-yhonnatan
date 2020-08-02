@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 
-import { UserforgotpasswordComponent } from './userforgotpassword/userforgotpassword.component';
 import { UsersignupRoutingModule } from './usersignup/usersignup-routing.module';
 import { UserslistRoutingModule } from './userslist/userslist-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +13,6 @@ import { UserslistComponent } from './userslist/userslist.component';
 
 @NgModule({
   declarations: [
-    UserforgotpasswordComponent,
     UserslistComponent,
 
   ],
